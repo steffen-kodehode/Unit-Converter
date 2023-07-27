@@ -32,25 +32,25 @@ const poundConverted = 2.204;
 convertBtn.addEventListener("click", function () {
   let feet = numberInput.value * feetConverted;
   let meter = numberInput.value / feetConverted;
-  lengthOutput.textContent = `${numberInput.value} meters = ${feet.toFixed(
+  lengthOutput.textContent = `${numberInput.value} meter(s) = ${feet.toFixed(
     3
-  )} feet | ${numberInput.value} feet = ${meter.toFixed(3)} meters`;
+  )} feet | ${numberInput.value} feet = ${meter.toFixed(3)} meter(s)`;
 });
 
 convertBtn.addEventListener("click", function () {
   let gallon = numberInput.value * gallonConverted;
   let liter = numberInput.value / gallonConverted;
-  volumeOutput.textContent = `${numberInput.value} meters = ${gallon.toFixed(
+  volumeOutput.textContent = `${numberInput.value} liter(s) = ${gallon.toFixed(
     3
-  )} feet | ${numberInput.value} feet = ${liter.toFixed(3)} meters`;
+  )} gallon(s) | ${numberInput.value} gallon(s) = ${liter.toFixed(3)} liter(s)`;
 });
 
 convertBtn.addEventListener("click", function () {
   let pound = numberInput.value * poundConverted;
   let kilogram = numberInput.value / poundConverted;
-  massOutput.textContent = `${numberInput.value} meters = ${pound.toFixed(
+  massOutput.textContent = `${numberInput.value} kilo(s) = ${pound.toFixed(
     3
-  )} feet | ${numberInput.value} feet = ${kilogram.toFixed(3)} meters`;
+  )} pound(s) | ${numberInput.value} pound(s) = ${kilogram.toFixed(3)} kilo(s)`;
 });
 
 numberInput.addEventListener("keypress", function (event) {
